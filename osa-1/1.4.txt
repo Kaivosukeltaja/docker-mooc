@@ -1,0 +1,8 @@
+$ docker pull devopsdockeruh/exec_bash_exercise
+$ docker run --name bash devopsdockeruh/exec_bash_exercise
+Ctrl + C (oops)
+$ docker start bash
+$ docker exec -it bash bash
+
+Secret message is:
+"Docker is easy"

@@ -1,0 +1,15 @@
+$ docker run -dit --name curler ubuntu:16.04 sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
+$ docker exec -it curler bash
+root@ade5e7a48f27:/# apt-get update
+root@ade5e7a48f27:/# apt-get install curl
+root@ade5e7a48f27:/# exit
+$ docker attach curler
+helsinki.fi
+Searching..
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
+</body></html>
