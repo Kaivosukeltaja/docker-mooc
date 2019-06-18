@@ -1,0 +1,4 @@
+nikosalminen@MacBook-Pro-5 docker-mooc (master) $ docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+nikosalminen@MacBook-Pro-5 docker-mooc (master) $ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
